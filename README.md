@@ -8,7 +8,7 @@ Data Preparation → KPI Development → Segmentation → Comparative Analysis �
 
 🔴 Live Interactive Dashboard
 
-👉 🚀 Open Interactive Power BI Dashboard
+https://app.powerbi.com/view?r=eyJrIjoiYTA0ZTJhNTctYTdhZi00MjNiLWIyZmItN2FiMDE5NGQzODk0IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9
 
 The dashboard is hosted on Power BI Service and can be explored interactively.
 
