@@ -1,50 +1,52 @@
-PUBG Player Performance Analytics Dashboard
+🎮 PUBG Player Performance Analytics Dashboard
 
-An interactive Power BI analytics project built to explore PUBG player performance, match behavior, combat effectiveness, movement, survival, and unusual performance patterns.
+An interactive Power BI analytics project built to analyze PUBG player performance, match behavior, combat effectiveness, movement, survival, and unusual performance patterns.
 
-The project demonstrates an end-to-end analytics workflow:
+The project follows an end-to-end analytics workflow:
 
 Data Preparation → KPI Development → Segmentation → Comparative Analysis → Relationship Analysis → Anomaly Analysis → Interactive Data Storytelling
 
-🔗 Live Interactive Dashboard
+🔴 Live Interactive Dashboard
 
-View the Interactive Power BI Dashboard
+👉 🚀 Open Interactive Power BI Dashboard
 
-The Power BI report is hosted on Power BI Service. The .pbix file is not included because of its file size. This repository provides the dashboard screenshots, project documentation, and live interactive report.
+The dashboard is hosted on Power BI Service and can be explored interactively.
+
+Note: The .pbix file is not included in this repository because of its large file size. The repository contains the project documentation and dashboard screenshots, while the live Power BI report provides the interactive experience.
 
 🎯 Project Objective
 
 The objective of this project was to analyze PUBG gameplay data and understand the factors associated with player performance and match outcomes.
 
-Rather than focusing on a single metric such as kills or wins, the analysis combines:
+Instead of evaluating performance using only one metric such as kills or wins, the analysis combines multiple dimensions:
 
-Combat performance
+⚔️ Combat performance
 
-Damage, kills and assists
+💥 Damage, kills and assists
 
-Headshot performance
+🎯 Headshot performance
 
-Match placement
+🏆 Match placement
 
-Survival duration
+⏱️ Survival and match duration
 
-Movement behavior
+🚶 Movement behavior
 
-Vehicle usage
+🚗 Vehicle usage
 
-Healing and boosting behavior
+❤️ Healing and boost usage
 
-Performance across different game modes
+🎮 Performance across different game modes
 
-Unusual or anomalous performances
+🚨 Unusual or anomalous performances
 
-The goal was to move beyond simply reporting numbers and investigate relationships, patterns, differences, and exceptions within the data.
+The goal was to move beyond simply reporting numbers and investigate patterns, relationships, differences, and exceptions within the data.
 
 📊 Dataset
 
-The project is based on the PUBG Finish Placement Prediction dataset from Kaggle, using the train_V2 gameplay data.
+The project uses the PUBG Finish Placement Prediction dataset from Kaggle, based on the train_V2 gameplay data.
 
-Important fields used
+Key fields used
 
 matchId
 
@@ -90,7 +92,9 @@ roadKills
 
 teamKills
 
-The analysis focused on six major game modes:
+Game modes analyzed
+
+To keep the analysis focused on the major standard modes, the project analyzed:
 
 squad-fpp
 
@@ -104,7 +108,7 @@ duo
 
 solo
 
-🧹 Data Preparation
+🧹 Data Preparation & Transformation
 
 Before building the dashboard, the dataset was examined and prepared for analysis.
 
@@ -114,53 +118,65 @@ Reviewing available columns and their analytical relevance
 
 Checking data quality and unusual records
 
-Handling matches with insufficient player records
+Identifying matches with insufficient player records
 
-Identifying invalid or impossible gameplay values
+Reviewing invalid or impossible gameplay values
 
-Reviewing zero-duration and other anomalous records
+Checking zero-duration and other anomalous records
 
-Preparing the data for Power BI
+Preparing the dataset for Power BI
 
 Creating calculated measures using DAX
 
 Structuring the analysis around meaningful gameplay questions
 
-The objective was not simply to clean the data, but to ensure that the resulting analysis was based on records that made sense from a gameplay perspective.
+The objective was not simply to clean the data, but to ensure that the analysis was based on records that made sense from a gameplay perspective.
 
 🛠️ Tools & Technologies
 
+Tool / Technology
+
+Purpose
+
 Power BI
+
+Interactive dashboard and data visualization
 
 DAX
 
+Measures, KPIs and analytical calculations
+
 Power Query
 
-Excel / CSV data preparation
+Data cleaning and transformation
 
-KPI development
+Excel / CSV
 
-Data visualization
+Data preparation and source data
 
-Data analysis
+Data Analysis
 
-Interactive dashboard design
+Pattern, comparison and relationship analysis
 
-📈 Dashboard Structure
+Data Visualization
+
+Communicating insights through interactive visuals
+
+📈 Dashboard Pages
 
 The report contains a landing page followed by six analytical pages.
 
-1. Home
+1. 🏠 Home
 
-The landing page provides an introduction to the project and navigation to the different analytical sections of the dashboard.
+The landing page provides an introduction to the project and navigation to the different analytical sections.
 
 
 
-2. PUBG Overview
+2. 🎮 PUBG Overview
 
 Provides a high-level view of the dataset and overall gameplay performance.
 
-The page focuses on:
+Focus areas
 
 Total matches
 
@@ -176,11 +192,11 @@ High-level gameplay patterns
 
 
 
-3. Match Performance
+3. 📊 Match Performance
 
 Examines how performance varies across matches and game modes.
 
-The analysis focuses on:
+Focus areas
 
 Match duration
 
@@ -194,11 +210,11 @@ Differences between game modes
 
 
 
-4. Combat Analysis
+4. ⚔️ Combat Analysis
 
 Focuses on combat-related performance.
 
-Key metrics include:
+Key metrics
 
 Kills
 
@@ -216,11 +232,11 @@ The objective is to understand whether stronger combat performance is reflected 
 
 
 
-5. Advanced Performance
+5. 🧠 Advanced Performance
 
 This page goes beyond basic KPIs and investigates deeper relationships between gameplay variables.
 
-It is designed to answer questions such as:
+Analytical questions
 
 How are different performance metrics related?
 
@@ -232,11 +248,11 @@ Are there meaningful differences between player performance patterns?
 
 
 
-6. Movement & Survival
+6. 🚶 Movement & Survival
 
 Analyzes movement behavior and survival-related performance.
 
-The analysis includes:
+Focus areas
 
 Walking distance
 
@@ -256,9 +272,9 @@ The objective is to understand how movement and survival behavior relate to over
 
 
 
-7. Anomaly Analysis
+7. 🚨 Anomaly Analysis
 
-The anomaly page looks beyond averages and identifies unusual performance patterns.
+The anomaly page looks beyond averages and investigates unusual performance patterns.
 
 Instead of asking only:
 
@@ -268,13 +284,13 @@ the analysis also asks:
 
 "Which matches or player performances behave differently from the normal pattern?"
 
-This helps identify unusually high or low performance and provides another layer of analytical investigation.
+This adds another layer of analytical investigation by focusing on exceptions and unusual observations.
 
 
 
 🔍 Key Analytical Questions
 
-The dashboard was designed around questions rather than simply creating visuals for every available column.
+The dashboard was designed around analytical questions, rather than simply creating visuals for every available column.
 
 Overall Performance
 
@@ -322,19 +338,31 @@ What characteristics make those performances different from the normal pattern?
 
 💡 Key Analytical Learnings
 
-One of the most important lessons from the project was that player performance cannot be evaluated using a single KPI.
+1. Performance cannot be evaluated using a single KPI
 
-For example, high kills indicate strong combat performance, but they do not automatically indicate strong survival ability, consistency, or final placement.
+High kills indicate strong combat performance, but they do not automatically indicate strong survival ability, consistency, or final placement.
 
-Combining combat, movement, survival, and match-level metrics provides a more complete picture of performance.
+Combining combat, movement, survival and match-level metrics provides a more complete picture of player performance.
 
-The project also demonstrated the importance of segmentation. Different game modes have different gameplay dynamics, so comparing all matches together can hide meaningful patterns.
+2. Segmentation matters
 
-The anomaly analysis added another layer by moving beyond averages and investigating unusual observations.
+Different game modes have different gameplay dynamics. Comparing all matches together can hide meaningful patterns.
 
-🧠 Analytical Thinking Developed
+Segmenting the analysis by game mode makes comparisons more meaningful.
 
-This project changed the way I approach data analysis.
+3. Averages do not tell the whole story
+
+The anomaly analysis adds another perspective by moving beyond average performance and investigating unusual observations.
+
+4. Dashboard design should follow analytical questions
+
+The project reinforced the idea that a dashboard should not simply be a collection of charts.
+
+Each visual should contribute to answering a question or supporting a decision.
+
+🧠 How This Project Improved My Analytical Thinking
+
+The biggest change was learning to approach a dataset by asking questions before building visualizations.
 
 Instead of starting with:
 
@@ -354,53 +382,109 @@ This helped me move from simply reporting numbers to investigating patterns and 
 
 Although the dataset is based on PUBG gameplay, the analytical methodology is directly transferable to business analytics.
 
-The same workflow can be applied to:
+The subject could change from players and matches to:
 
-Sales analytics
+Sales representatives
 
-Customer analytics
+Customers
 
-Marketing analytics
+Products
 
-Operations analytics
+Marketing campaigns
 
-Employee performance analytics
+Business operations
 
-Product analytics
+Employee performance
 
-For example, instead of analyzing player performance, the same approach could be used to analyze sales representative performance, customer behavior, product performance, or operational efficiency.
-
-The transferable workflow is:
+But the analytical workflow remains similar:
 
 Raw Data → Cleaning → KPI Definition → Segmentation → Trend Analysis → Relationship Analysis → Anomaly Detection → Insights → Decision Support
 
-This project helped strengthen not only my Power BI skills, but also my ability to approach an unfamiliar dataset, formulate analytical questions, investigate patterns, and communicate findings clearly.
+For example, instead of analyzing player performance, the same approach could be used to analyze:
+
+Sales representative performance
+
+Customer purchasing behavior
+
+Product performance
+
+Regional sales
+
+Operational efficiency
+
+The project therefore helped develop skills that are relevant beyond the gaming domain.
+
+📚 Skills Demonstrated
+
+Technical Skills
+
+Power BI
+
+Power Query
+
+DAX
+
+Data cleaning
+
+Data transformation
+
+KPI development
+
+Data modeling
+
+Interactive visualization
+
+Dashboard development
+
+Analytical Skills
+
+Data exploration
+
+Segmentation
+
+Comparative analysis
+
+Trend analysis
+
+Relationship analysis
+
+Anomaly investigation
+
+Problem decomposition
+
+Insight generation
+
+Data storytelling
+
+Translating data into decision-support information
 
 🚀 Future Improvements
 
-Possible future improvements include:
+Possible extensions to the project include:
 
 Adding more statistical analysis
 
-Exploring predictive analytics
+Developing a player performance scoring system
 
-Building player-level performance scoring
+Exploring predictive analytics
 
 Investigating additional game modes
 
-Adding more advanced anomaly detection techniques
+Implementing more advanced anomaly detection techniques
 
 Exploring machine learning approaches for performance prediction
 
 Connecting the dashboard to regularly refreshed data
 
-These improvements would extend the project from primarily descriptive and diagnostic analytics toward more predictive analysis.
+These improvements would extend the project from primarily descriptive and diagnostic analytics toward more predictive analytics.
 
 📸 Dashboard Preview
 
-All dashboard pages are available in the repository under the screenshot files.
+The complete dashboard is available through the screenshots above.
 
-For the fully interactive experience, use the Live Power BI Dashboard.
+For the full interactive experience:
+
+👉 🚀 Open Live Power BI Dashboard
 
 📁 Repository Structure
 
@@ -420,6 +504,8 @@ PUBG-Analytics-PowerBI/
 
 Priyanshu Kumar Bouri
 
-Aspiring Data Analyst focused on Power BI, SQL, Excel, Python, data visualization, and business analytics.
+Aspiring Data Analyst focused on:
 
-This project was created as part of my portfolio to demonstrate practical data analysis, dashboard development, and analytical problem-solving skills.
+Power BI • SQL • Excel • Python • Data Visualization • Business Analytics
+
+This project was created as part of my data analytics portfolio to demonstrate practical experience in data preparation, analytical thinking, dashboard development, visualization, and insight communication.
